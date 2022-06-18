@@ -33,7 +33,7 @@ import { map, shareReplay } from 'rxjs/operators';
           >
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
-          <span>css-grid</span>
+          <span>CSS Grid</span>
         </mat-toolbar>
         <router-outlet></router-outlet>
       </mat-sidenav-content>

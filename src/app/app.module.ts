@@ -11,14 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { GridComponent } from './grid.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    GridComponent
-  ],
+  declarations: [AppComponent, NavComponent, GridComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,9 +24,9 @@ import { GridComponent } from './grid.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grid',
-  template: `
-    <p>
-      grid works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './grid.component.html',
+  styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit {
 
