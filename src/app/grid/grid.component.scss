@@ -1,13 +1,15 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 2rem;
   padding: 2rem;
+  height: 90vh;
 }
 
-.container > div {
+.container div {
   border: 1px solid white;
-  height: 200px;
+  height: auto;
 }
 
 .red {
@@ -17,17 +19,19 @@
 
 .green {
   background-color: green;
-  grid-column: span 3;
+  grid-row: 3/6;
+  grid-column: 5/7;
 }
 
 .blue {
   background-color: darkblue;
-  grid-column: span 2;
+  grid-row: 6/9;
+  grid-column-start: 2;
 }
 
 .orange {
   background-color: coral;
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 .purple {
