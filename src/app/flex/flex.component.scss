@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 25vh;
+  width: inherit;
+}
+
+.container div {
+  border: 1px solid white;
+  width: 200px;
+}
+
+.red {
+  background-color: darkred;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: darkblue;
+}
+
+.orange {
+  background-color: coral;
+}
+
+.purple {
+  background-color: indigo;
+}
