@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 2rem;
   padding: 2rem;
 }
@@ -11,13 +11,26 @@
 }
 
 .red {
-  background-color: red;
+  background-color: darkred;
+  grid-column: span 2;
 }
 
 .green {
   background-color: green;
+  grid-column: span 3;
 }
 
 .blue {
-  background-color: blue;
+  background-color: darkblue;
+  grid-column: span 2;
+}
+
+.orange {
+  background-color: coral;
+  grid-column: span 3;
+}
+
+.purple {
+  background-color: indigo;
+  grid-column: span 3;
 }
