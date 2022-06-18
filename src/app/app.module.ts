@@ -12,9 +12,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { GridComponent } from './grid/grid.component';
+import { FlexComponent } from './flex/flex.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, GridComponent],
+  declarations: [AppComponent, NavComponent, GridComponent, FlexComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
