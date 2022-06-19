@@ -13,9 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { GridComponent } from './grid/grid.component';
 import { FlexComponent } from './flex/flex.component';
+import { BlockComponent } from './block/block.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, GridComponent, FlexComponent],
+  declarations: [AppComponent, NavComponent, GridComponent, FlexComponent, BlockComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
