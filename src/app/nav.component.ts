@@ -19,6 +19,7 @@ import { map, shareReplay } from 'rxjs/operators';
         <mat-nav-list>
           <a mat-list-item routerLink="grid">Grid</a>
           <a mat-list-item routerLink="flex">Flex Box</a>
+          <a mat-list-item routerLink="block">Block</a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
@@ -34,7 +35,9 @@ import { map, shareReplay } from 'rxjs/operators';
           </button>
           <span>CSS</span>
         </mat-toolbar>
-        <router-outlet></router-outlet>
+        <div class="content">
+          <router-outlet></router-outlet>
+        </div>
       </mat-sidenav-content>
     </mat-sidenav-container>
   `,
@@ -56,6 +59,10 @@ import { map, shareReplay } from 'rxjs/operators';
         position: sticky;
         top: 0;
         z-index: 1;
+      }
+
+      .content {
+        padding: 2rem;
       }
     `,
   ],
